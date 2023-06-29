@@ -1,0 +1,36 @@
+<div class="container mt-3">
+    <form action="" (ngSubmit)="onSubmit()">
+        <div class="col-lg-4">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Id</span>
+                <input name="id" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" [(ngModel)]="id"> {{title}}
+              </div>              
+        </div>
+
+        <div class="col-lg-4">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                <input name="title" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" [(ngModel)]="title"> {{title}}
+              </div>              
+        </div>
+        <div class="col-lg-4">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Imagen</span>
+                <input name="image"  type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" [(ngModel)]="image">{{image}}
+              </div>              
+        </div>
+        <div class="col-lg-4">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Cantidad</span>
+                <input name="quantity"  type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" [(ngModel)]="quantity" >{{quantity}}
+              </div>              
+        </div>
+        <div class="col-lg-4">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Precio</span>
+                <input name="price"  type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" [(ngModel)]="price">{{price}}
+              </div>              
+        </div>
+        <input class="btn btn-primary" type="submit" value="Crear">
+    </form>
+</div>

@@ -1,0 +1,10 @@
+<div class="container mt-3">
+    <div class="row">
+        <app-total mensaje="Total a pagar:" [total]="total"></app-total>
+    </div>
+    <div class="row">
+        <app-item *ngFor="let item of items" [item]="item" (deleteItem)="deleteItem($event)"(toggleItem)="toggleItem($event)" class="col-lg-4 mt-4">
+        </app-item>
+    </div>
+</div>
+
